@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>People counter</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <h1>People entered: </h1>
     <h2 id="count-el">0</h2>
 
+    <!-Control btn->
+
     <button id="increment-btn" onclick="increment()">INCREMENT</button>
     <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
     <button id="reset-btn" onclick="reset()">RESET</button>
 
+    <!-Alert btn->
+
+    <div id="alert">
+        <span id="closebtn">&times;</span>
+        Is already at 0!
+    </div>
     <script src="index.js"> </script>
 </body>
 

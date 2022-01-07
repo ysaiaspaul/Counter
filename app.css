@@ -1,3 +1,6 @@
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
 
 /*BUTTON*/
 button{
@@ -25,3 +28,33 @@ button:hover{
     background-color: #5caf5b;
 }
 
+/*ALERT BTN*/
+#alert{
+    color: #f0f8ff;
+    background-color: #f44336;
+    padding: 20px;
+    width: 200px;
+    position: relative;
+    margin: 20px 0 0 0;
+    display: none;
+}
+
+#closebtn{
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+#closebtn:hover{
+    color: #f0f8ff;
+}
+
+#removeAlert{
+    display: none;
+}
