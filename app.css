@@ -1,8 +1,27 @@
 *{
     font-family: 'Be Vietnam Pro', sans-serif;
 }
-
+/*Container*/
+.container{
+    width: 392px;
+    height: 246px;
+    margin: 10% auto;
+    background-color: bisque;
+}
+.container  h1{
+    width: 175px;
+    margin: auto;
+}
+#count-el{
+    width: 21px;
+    margin: 9% auto;
+    font-size: 46px;
+}
 /*BUTTON*/
+
+.controlBtn{
+    margin: 20% auto;
+}
 button{
     border: none;
     color: white;
@@ -35,7 +54,7 @@ button:hover{
     padding: 20px;
     width: 200px;
     position: relative;
-    margin: 20px 0 0 0;
+    margin: -249px 0 0 78px;
     display: none;
 }
 

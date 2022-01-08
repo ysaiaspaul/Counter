@@ -9,21 +9,25 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <h1>People entered: </h1>
-    <h2 id="count-el">0</h2>
+    <section class="container">
+        <h1>People entered: </h1>
+        <h2 id="count-el">0</h2>
 
-    <!-Control btn->
+        <!-Control btn->
+        <section class="controlBtn">
 
-    <button id="increment-btn" onclick="increment()">INCREMENT</button>
-    <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
-    <button id="reset-btn" onclick="reset()">RESET</button>
+            <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
+            <button id="reset-btn" onclick="reset()">RESET</button>
 
-    <!-Alert btn->
+        </section>
+        <!-Alert btn->
 
-    <div id="alert">
-        <span id="closebtn">&times;</span>
-        Is already at 0!
-    </div>
+        <div id="alert">
+            <span id="closebtn">&times;</span>
+            Is already at 0!
+        </div>
+    </section>
     <script src="index.js"> </script>
 </body>
 
