@@ -3,8 +3,8 @@
 }
 /*Container*/
 .container{
-    width: 392px;
-    height: 246px;
+    width: 524px;
+    height: 283px;
     margin: 10% auto;
     background-color: bisque;
 }
@@ -42,10 +42,13 @@ button:hover{
 #decrement-btn{
     background-color: #DC143C;
 }
-
-#reset-btn{
+#save-btn{
     background-color: #5caf5b;
 }
+#reset-btn{
+    background-color: #daa520;
+}
+
 
 /*ALERT BTN*/
 #alert{
@@ -54,7 +57,7 @@ button:hover{
     padding: 20px;
     width: 200px;
     position: relative;
-    margin: -249px 0 0 78px;
+    margin: -301px 0 0 139px;
     display: none;
 }
 

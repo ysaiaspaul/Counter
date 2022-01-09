@@ -24,6 +24,11 @@ function decrement(){
     }
 }
 
+//Save the count
+function save(){
+    console.log(count)
+}
+
 //Reset the counter
 function reset(){
 
@@ -42,7 +47,6 @@ document.getElementById("closebtn").onclick = function() {closebtn()};
 function closebtn(){
     document.getElementById("alert").style.display = "none";
 }
-
 
 
 
