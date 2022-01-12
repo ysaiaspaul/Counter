@@ -3,12 +3,16 @@
 //Declare global variables
 let count = 0
 let countEl =  document.getElementById("count-el")
+let saveEl = document.getElementById("save-el")
+let notification = document.getElementById("alert")
+
 
 //Increase counter
  function increment(){
-     count = count + 1
+     count += 1
 
      countEl.innerText = count
+     //saveEl.style.display = "block"
  }
 
 //Decrease the count
@@ -26,18 +30,25 @@ function decrement(){
 
 //Save the count
 function save(){
-    console.log(count)
+    let countStr = count + " - "
+    saveEl.innerText += countStr
+
+   // console.log(count)
 }
 
 //Reset the counter
 function reset(){
 
     if (count === 0){
-        //alert("Is already at 0!")
-        document.getElementById("alert").style.display = "block";
+
+        notification.style.display = "block"
+         saveEl.innerText = "Previews entries: "
+
     }else{
         count = 0
         countEl.innerText = count
+        saveEl.innerText = "Previews entries: "
+
     }
 }
 //Close the alert message
@@ -45,7 +56,7 @@ function reset(){
 document.getElementById("closebtn").onclick = function() {closebtn()};
 
 function closebtn(){
-    document.getElementById("alert").style.display = "none";
+    notification.style.display = "none";
 }
 
 
