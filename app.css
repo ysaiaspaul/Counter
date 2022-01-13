@@ -21,7 +21,9 @@
 
 .controlBtn{
     margin: 20% auto;
+
 }
+
 button{
     border: none;
     color: white;
@@ -30,6 +32,7 @@ button{
     height: 42px;
     padding: 8px;
     margin-right: 8px;
+    order: 5;
 }
 
 button:hover{

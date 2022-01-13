@@ -11,7 +11,7 @@ let notification = document.getElementById("alert")
  function increment(){
      count += 1
 
-     countEl.innerText = count
+     countEl.textContent = count
      //saveEl.style.display = "block"
  }
 
@@ -24,32 +24,28 @@ function decrement(){
 
     }else{
         count = --count
-        countEl.innerText = count
+        countEl.textContent = count
     }
 }
 
 //Save the count
 function save(){
     let countStr = count + " - "
-    saveEl.innerText += countStr
-
+    saveEl.textContent += countStr
+    count = 0
+    countEl.textContent = count
    // console.log(count)
 }
 
 //Reset the counter
 function reset(){
 
-    if (count === 0){
-
-        notification.style.display = "block"
-         saveEl.innerText = "Previews entries: "
-
-    }else{
-        count = 0
-        countEl.innerText = count
         saveEl.innerText = "Previews entries: "
+        count = 0
+        countEl.textContent = count
+        notification.style.display = "block"
 
-    }
+
 }
 //Close the alert message
 
