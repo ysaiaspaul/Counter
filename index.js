@@ -12,7 +12,7 @@ let notification = document.getElementById("alert")
      count += 1
 
      countEl.textContent = count
-     //saveEl.style.display = "block"
+
  }
 
 //Decrease the count
@@ -34,7 +34,7 @@ function save(){
     saveEl.textContent += countStr
     count = 0
     countEl.textContent = count
-   // console.log(count)
+
 }
 
 //Reset the counter
